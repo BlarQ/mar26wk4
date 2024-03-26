@@ -1,0 +1,214 @@
+@media screen and (max-width: 639px) {
+    main{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); /*same as the one above. just another method*/
+        grid-template-rows: repeat(6, 100px);
+        gap: 25px 10px;
+    }
+    
+    section{
+        background-color: rgb(190, 8, 32);
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 20px 0 20px 0;
+        /* border: 5px solid blue; */
+        transition: .5s ease-in-out;
+    }
+    
+    section:hover{
+        box-shadow: 5px 5px 15px grey;
+        transform: scale(1.05);
+    }
+    
+    /* section:nth-of-type(1){
+        grid-area: 1/1/2/3;
+    }
+    section:nth-of-type(2){
+        grid-area: 2/1/2/3;
+    }
+    section:nth-of-type(3){
+        grid-area: 4/1/5/3;
+    }
+    section:nth-of-type(4){
+        grid-area: 1/3/2/4;
+    }
+    section:nth-of-type(5){
+        grid-area: 3/1/4/2;
+    }
+    section:nth-of-type(6){
+        grid-area: 4/1/5/4;
+    } */
+    
+    h2{
+        font-size: 44px;
+        text-transform: uppercase;
+        text-shadow: 2px 2px 20px blue;
+        -webkit-text-stroke: 1px blue;
+        text-align: center;
+    }
+    
+    h2:hover{
+        color: transparent;
+        background-image: url(https://images.pexels.com/photos/20250495/pexels-photo-20250495/free-photo-of-valz-iii.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load);
+    
+        background-image: conic-gradient(
+            fuchsia 25%,
+            tomato 25%,
+            tomato 50%,
+            lime 50%,
+            lime 75%,
+            cyan 75%
+        );
+    
+        background-clip: text;
+        cursor: pointer;
+    }
+}
+@media screen and (min-width: 640px), screen and (max-width:639px) and (orientation: landscape) {
+    main{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /*same as the one above. just another method*/
+        grid-template-rows: repeat(4, 100px);
+        gap: 25px 10px;
+    }
+    
+    section{
+        background-color: rgb(22, 1, 22);
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 20px 0 20px 0;
+        /* border: 5px solid blue; */
+        transition: .5s ease-in-out;
+    }
+    
+    section:hover{
+        box-shadow: 5px 5px 15px grey;
+        transform: scale(1.05);
+    }
+    
+    section:nth-of-type(1){
+        grid-area: 1/1/2/3;
+    }
+    section:nth-of-type(2){
+        grid-area: 2/1/3/2;
+    }
+    section:nth-of-type(3){
+        grid-area: 4/1/5/3;
+    }
+    /* section:nth-of-type(4){
+        grid-area: 1/3/2/4;
+    }
+    section:nth-of-type(5){
+        grid-area: 3/1/4/2;
+    }
+    section:nth-of-type(6){
+        grid-area: 4/1/5/4;
+    } */
+    
+    h2{
+        font-size: 44px;
+        text-transform: uppercase;
+        text-shadow: 2px 2px 20px blue;
+        -webkit-text-stroke: 1px blue;
+        text-align: center;
+    }
+    
+    h2:hover{
+        color: transparent;
+        background-image: url(https://images.pexels.com/photos/20250495/pexels-photo-20250495/free-photo-of-valz-iii.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load);
+    
+        background-image: conic-gradient(
+            fuchsia 25%,
+            tomato 25%,
+            tomato 50%,
+            lime 50%,
+            lime 75%,
+            cyan 75%
+        );
+    
+        background-clip: text;
+        cursor: pointer;
+    }
+}
+@media screen and (min-width: 1227px) {
+    main{
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-columns: repeat(3, 1fr); /*same as the one above. just another method*/
+        grid-template-rows: repeat(4, 100px);
+        /* grid-template-areas: 
+        "b b d"
+        "b b c"
+        "e a a"
+        "f f f"; */
+        gap: 25px 10px;
+    }
+    
+    section{
+        background-color: rgb(160, 0, 160);
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 20px 0 20px 0;
+        /* border: 5px solid blue; */
+        transition: .5s ease-in-out;
+    }
+    
+    section:hover{
+        box-shadow: 5px 5px 15px grey;
+        transform: scale(1.05);
+    }
+    
+    section:nth-of-type(1){
+        grid-area: 3/2/4/4;
+    }
+    section:nth-of-type(2){
+        grid-area: 1/1/3/3;
+    }
+    section:nth-of-type(3){
+        grid-area: 2/3/3/4;
+    }
+    section:nth-of-type(4){
+        grid-area: 1/3/2/4;
+    }
+    section:nth-of-type(5){
+        grid-area: 3/1/4/2;
+    }
+    section:nth-of-type(6){
+        grid-area: 4/1/5/4;
+    }
+    
+    h2{
+        font-size: 44px;
+        text-transform: uppercase;
+        text-shadow: 2px 2px 20px blue;
+        -webkit-text-stroke: 1px blue;
+        text-align: center;
+    }
+    
+    h2:hover{
+        color: transparent;
+        background-image: url(https://images.pexels.com/photos/20250495/pexels-photo-20250495/free-photo-of-valz-iii.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load);
+    
+        background-image: conic-gradient(
+            fuchsia 25%,
+            tomato 25%,
+            tomato 50%,
+            lime 50%,
+            lime 75%,
+            cyan 75%
+        );
+    
+        background-clip: text;
+        cursor: pointer;
+    }
+}
+
+
+/* MEDIA QUERY */
+
