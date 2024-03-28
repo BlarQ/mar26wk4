@@ -1,0 +1,227 @@
+@media all and (max-width: 2217px) {
+    main {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(6, 100px);
+        /* gap: 25px 10px; */
+        grid-template-areas:
+        "a a a"
+        "a a a"
+        "e f d"
+        "b b d"
+        "b b d"
+        "c c c";
+        inset-block-start: 150px;
+        position: relative;
+        z-index: -1;
+    }
+
+    body, nav ul{
+        margin-top: 0;
+    }
+
+    nav{
+        background-color: blue;
+        color: white;
+        position: fixed;
+        /* left: 0;
+        right: 0; */
+        inset-inline: 0;
+    }
+    
+    nav ul{
+        min-height: 100px;
+        display: flex;
+        align-items: center;
+        list-style-type: none;
+        flex-direction: row;
+        justify-content: space-evenly;
+        /* column-gap: 15px; */
+    }
+
+    nav li:nth-of-type(even){
+        align-self: flex-end;
+    }
+
+    section {
+        background-color: black;
+        color: aliceblue;
+        border: 10px double seagreen;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-transform: uppercase;
+    }
+
+    section:nth-of-type(1) {
+        grid-area: a;
+    }
+
+    section:nth-of-type(2) {
+        grid-area: b;
+    }
+
+    section:nth-of-type(3) {
+        grid-area: c;
+    }
+
+    section:nth-of-type(4) {
+        grid-area: d;
+    }
+
+    section:nth-of-type(5) {
+        grid-area: e;
+    }
+
+    section:nth-of-type(6) {
+        grid-area: f;
+    }
+}
+@media all and (max-width: 680px) {
+    main {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 100px);
+        /* gap: 25px 10px; */
+        grid-template-areas:
+        "d d"
+        "e c"
+        "f b"
+        "a a";
+    }
+
+    section {
+        background-color: rgb(236, 142, 142);
+        color: aliceblue;
+        border: 10px double rgb(24, 32, 28);
+    }
+
+    section:nth-of-type(1) {
+        grid-area: a;
+    }
+
+    section:nth-of-type(2) {
+        grid-area: b;
+    }
+
+    section:nth-of-type(3) {
+        grid-area: c;
+    }
+
+    section:nth-of-type(4) {
+        grid-area: d;
+    }
+
+    section:nth-of-type(5) {
+        grid-area: e;
+    }
+
+    section:nth-of-type(6) {
+        grid-area: f;
+    }
+}
+@media all and (max-width: 480px) {
+    main {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, 100px);
+        /* gap: 25px 10px; */
+        grid-template-areas:
+        "f"
+        "e"
+        "d"
+        "c"
+        "b"
+        "a";
+        inset-block-start: 75vh;
+        z-index: -1;
+    }
+
+    nav ul{
+        min-height: 70vh;
+        display: flex;
+        align-items: center;
+        list-style-type: none;
+        flex-direction: column;
+        justify-content: space-evenly;
+        /* column-gap: 15px; */
+    }
+
+    nav li:nth-of-type(even){
+        align-self: center;
+    }
+
+    section {
+        background-color: rgb(247, 5, 5);
+        color: aliceblue;
+        border: 10px double rgb(3, 34, 18);
+    }
+
+    section:nth-of-type(1) {
+        grid-area: a;
+    }
+
+    section:nth-of-type(2) {
+        grid-area: b;
+    }
+
+    section:nth-of-type(3) {
+        grid-area: c;
+    }
+
+    section:nth-of-type(4) {
+        grid-area: d;
+    }
+
+    section:nth-of-type(5) {
+        grid-area: e;
+    }
+
+    section:nth-of-type(6) {
+        grid-area: f;
+    }
+}
+
+@media print and (max-width: 680px) and (orientation:landscape) {
+    main {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 100px);
+        /* gap: 25px 10px; */
+        grid-template-areas:
+        "d d"
+        "e c"
+        "f b"
+        "a a";
+    }
+
+    section {
+        background-color: rgb(236, 142, 142);
+        color: aliceblue;
+        border: 10px double rgb(24, 32, 28);
+    }
+
+    section:nth-of-type(1) {
+        grid-area: a;
+    }
+
+    section:nth-of-type(2) {
+        grid-area: b;
+    }
+
+    section:nth-of-type(3) {
+        grid-area: c;
+    }
+
+    section:nth-of-type(4) {
+        grid-area: d;
+    }
+
+    section:nth-of-type(5) {
+        grid-area: e;
+    }
+
+    section:nth-of-type(6) {
+        grid-area: f;
+    }
+}
